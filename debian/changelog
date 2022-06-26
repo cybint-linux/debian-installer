@@ -1,3 +1,11 @@
+debian-installer (20220626+cybint) unstable; urgency=medium
+
+  [ Tom Lee ]
+  * Sync with Debian
+  * Rebuild for 5.18.0
+
+ -- Tom Lee <tom@cybint.io>  Sun, 26 Jun 2022 03:08:00 +0000
+
 debian-installer (2021XXXX) UNRELEASED; urgency=medium
 
   [ Samuel Thibault ]
