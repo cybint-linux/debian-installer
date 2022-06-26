@@ -1,4 +1,4 @@
-debian-installer (20220626+cybint) unstable; urgency=medium
+debian-installer (5.18.0-2+cybint) unstable; urgency=medium
 
   [ Tom Lee ]
   * Sync with Debian

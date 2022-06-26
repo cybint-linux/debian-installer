@@ -40,18 +40,18 @@ PRESEED =
 DPKG_UNPACK_OPTIONS = --force-overwrite
 
 # The codename of the Debian release that should be installed by default.
-DEBIAN_RELEASE = bookworm
+DEBIAN_RELEASE =  $(USE_UDEBS_FROM)
 
 # The version (number and codename) of the Debian release targeted by the
 # installation images. (Only the codename is used while the version number
 # has not yet been determined.)
-DEBIAN_VERSION = 12 (bookworm)
-DEBIAN_VERSION ?= bookworm
+DEBIAN_VERSION = cybint
+DEBIAN_VERSION ?= cybint
 
 # Define here from what release (codename!) components (udebs) should be taken
 # to build debian-installer. By default this is set to 'unstable' for building
 # daily images. For official builds this is overruled in debian/rules.
-USE_UDEBS_FROM ?= unstable
+USE_UDEBS_FROM ?= cybint
 
 # Archive components from which to fetch debian-installer modules.
 UDEB_COMPONENTS ?= main/debian-installer
@@ -95,13 +95,13 @@ TYPE = $(MEDIUM)
 # Used to write a /etc/lsb-release file in the installer initrd
 # and to brand the installer menu.
 LSB_DISTRIB_ID=Debian
-LSB_DISTRIB_DESCRIPTION=Debian $(shell uname -o) installer
+LSB_DISTRIB_DESCRIPTION=CYBINT Installer
 # Inlude the build date of the installer in here.
 LSB_DISTRIB_RELEASE=$(DEBIAN_VERSION) - installer build $(BUILD_DATE)
 
 # This keyring is only used to verify udeb downloads using apt. Since the
 # build process does not run as root, apt cannot read /etc/apt/trusted.gpg.
-KEYRING=/usr/share/keyrings/debian-archive-keyring.gpg
+KEYRING=/usr/share/keyrings/cybint-archive-keyring.gpg
 
 # All images that include cdebconf should include symbols needed by these
 # plugins.
