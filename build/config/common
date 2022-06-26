@@ -5,7 +5,7 @@
 # local setting such as EXTRAFILES. That way you won't accidentially commit
 # your local changes.
 
-# set DEBUG to y if you want to get the source for and compile 
+# set DEBUG to y if you want to get the source for and compile
 # debug versions of the needed udebs
 #DEBUG = y
 
@@ -27,7 +27,7 @@ EXTRAS ?=
 
 # This variable can be used to add a preseed file to the initrd itself.
 # It will be loaded by the initrd-preseed udeb.
-PRESEED = 
+PRESEED =
 
 # Normally the sources.list for building d-i will be derived from your
 # "normal" sources.list. However, you can specify a mirror here to override
@@ -75,7 +75,7 @@ BOOTMENU_BEEP ?= n
 
 # Filesystem type for the initrd, currently valid values are ext2, cramfs,
 # and initramfs.
-# NOTE: Your kernel must support this filesystem, not just a module. 
+# NOTE: Your kernel must support this filesystem, not just a module.
 INITRD_FS = initramfs
 
 # What device to write floppies on
